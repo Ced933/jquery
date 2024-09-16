@@ -35,7 +35,33 @@
         <div class="carrousel-box">
           <div class="carrousel">
             <img id="left-arrow" src="ASSETS/slider_arrow_left.svg" alt="" />
-            <img id="main-img-carrousel" src="" alt="" />
+            <div class="div-img-carousel">
+              <img
+                id="1"
+                class="img-carrousel active"
+                src="ASSETS/first-slider_feutre_coloriage.png"
+                alt=""
+              />
+              <img
+                id="2"
+                class="img-carrousel"
+                src="ASSETS/first_slider_crayon_couleur.png"
+                alt=""
+              />
+
+              <img
+                id="3"
+                class="img-carrousel"
+                src="ASSETS/first_slider_feutre_double.png"
+                alt=""
+              />
+              <img
+                class="img-carrousel"
+                src="ASSETS/first_slider_marqueur.png"
+                alt=""
+              />
+            </div>
+
             <img id="right-arrow" src="ASSETS/slider_arrow_right.svg" alt="" />
           </div>
 
@@ -48,27 +74,31 @@
       </section>
 
       <section class="pen-box">
+        <!-- 1 -->
         <img
-          id="pagination_marqueur"
+          id="pagination-marqueur"
           class="pencil"
           src="ASSETS/first_slider_pagination_marqueur.png"
           alt=""
         />
+        <!-- 2 -->
         <img
-          id="feutre_double"
+          id="feutre-double"
           class="pencil"
           src="ASSETS/first_slider_pagination_feutre_double.png"
           alt=""
         />
+        <!-- 3 -->
         <img
-          id="crayon_couleur"
+          id="crayon-couleur"
           class="pencil"
           src="ASSETS/first_slider_pagination_crayon_couleur.png"
           alt=""
         />
+        <!-- 4 -->
         <img
           id="feutre-coloriage"
-          class="pencil active"
+          class="pencil active-anim"
           src="ASSETS/first_slider_pagination_feutre_coloriage.png"
           alt=""
         />
@@ -81,6 +111,7 @@
     </main>
 
     <script src="jquery.js" type="text/javascript"></script>
+    <script src="jqueryApp.js"></script>
     <script src="app.js" type="text/javascript"></script>
   </body>
 </html>
