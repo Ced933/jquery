@@ -55,6 +55,7 @@ header{
         border-radius:  1% 1% 53% 53% / 90% 90% 10% 10%;
         }
         @media screen and (max-width: 425px) {
+            padding-bottom: 10px;
             height: 25dvh;
             border-radius:  1% 1% 53% 53% / 90% 90% 10% 10%;
             }
