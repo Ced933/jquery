@@ -15,12 +15,20 @@ $(document).ready(function () {
     $("#name").html(prevImg.attr("alt"));
     if (prevImg.attr("alt") === "Feutre double") {
       $("#name").css("color", "#028149");
+      $("#name").css("fontFamily", "Broadcast_Matter");
+      $("#name").css("fontSize", "45px");
     } else if (prevImg.attr("alt") === "Marqueur") {
       $("#name").css("color", "#4D5FAB");
+      $("#name").css("fontFamily", "animeace");
+      $("#name").css("fontSize", "19px");
     } else if (prevImg.attr("alt") === "Feutre de coloriage") {
       $("#name").css("color", "#C7669C");
+      $("#name").css("fontFamily", "Lumios-Marker");
+      $("#name").css("fontSize", "40px");
     } else if (prevImg.attr("alt") === "Crayon couleur") {
       $("#name").css("color", "#EB9731");
+      $("#name").css("fontFamily", "Chalkduster");
+      $("#name").css("fontSize", "25px");
     }
 
     if (prevImg.length) {
@@ -43,12 +51,20 @@ $(document).ready(function () {
     $("#name").html(nextImg.attr("alt"));
     if (nextImg.attr("alt") === "Feutre double") {
       $("#name").css("color", "#028149");
+      $("#name").css("fontFamily", "Broadcast_Matter");
+      $("#name").css("fontSize", "45px");
     } else if (nextImg.attr("alt") === "Marqueur") {
       $("#name").css("color", "#4D5FAB");
+      $("#name").css("fontFamily", "animeace");
+      $("#name").css("fontSize", "19px");
     } else if (nextImg.attr("alt") === "Feutre de coloriage") {
       $("#name").css("color", "#C7669C");
+      $("#name").css("fontFamily", "Lumios-Marker");
+      $("#name").css("fontSize", "40px");
     } else if (nextImg.attr("alt") === "Crayon couleur") {
       $("#name").css("color", "#EB9731");
+      $("#name").css("fontFamily", "Chalkduster");
+      $("#name").css("fontSize", "25px");
     }
 
     var currentImgAnim = $(".active-anim");

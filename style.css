@@ -1,16 +1,3 @@
-html{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-}
-body{
-    margin: 0 auto;
-    max-width: 1400px; 
-    border: 1px solid red;
-    /* overflow: hidden; */
-}
-
 /* Font  */
 @font-face {
     font-family:'animeace' ;
@@ -20,6 +7,11 @@ body{
     font-family:'Lumios-Marker' ;
     src: url('./ASSETS/Lumios-Marker.otf');
 }
+@font-face {
+    font-family:'Chalkduster' ;
+    src: url('./ASSETS/Chalkduster.otf');
+}
+
 
 @font-face {
     font-family:'BadScript-Regular' ;
@@ -41,16 +33,26 @@ body{
     font-family:'Muli-Light' ;
     src: url('./ASSETS/Muli-Light.otf');
 }
+html{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    
+}
+body{
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
 
 /* Header  */
 header{
     z-index: 10;
     position: fixed;
     background-color: white;
-    width: 1400px;
-    /* border-bottom-left-radius: 1000px 80px; 
-    border-bottom-right-radius: 700px 80px;     */
-     /* border: 1px solid red; */
+    width: 100%;
+
      padding-bottom: 30px;
      border-radius: 0 0 100% 100%  ;
     
@@ -109,10 +111,10 @@ header{
 /* Main  */
 
 .main{
-    max-height: 100dvh;
+    height: calc(100dvh - 28dvh);
     padding-top: 240px;
-    max-width: 1400px;
-   overflow: hidden;
+    width: 100%;
+    overflow: hidden;
     background-color: #F4F1FB;
     position: relative;
 }
@@ -120,28 +122,36 @@ header{
 .div-img-carousel{
     /* inner  */
     /* width: 400px; */
+    width: 50%;
+    height: 50%;
     /* margin: 0 auto; */
     display: flex;
     justify-content: center;
-/* position: relative; */
+    align-items: center;
+position: relative;
+/* border: 1px solid red; */
 
 overflow: hidden;
 }
 
+
 .img-carrousel{
-    width: 55%;
+    /* width: 50%; */
+    /* width: 00px; */
+    /* height: 50%; */
     display: none;
 }
 
 img.active{
     display: inline-block;
+    width: 50%;
 }
-
 
 .carrousel{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
 }
 .h3-main{
     text-align: center;
@@ -156,7 +166,7 @@ img.active{
     /* width: 50%;
     margin: 0 auto; */
     text-align: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     line-height: 20px;
 }
 .div-description-carrousel h4{
@@ -181,13 +191,26 @@ img.active{
  background-color: #EB9731;
  border-radius: 50px;
 }
+#right-arrow,#left-arrow{
+    cursor: pointer;
+}
 
+#right-arrow{
+    position: absolute;
+    right: 35%;
+}
+#left-arrow{
+    position: absolute;
+    left: 35%;
+    z-index: 10;
+}
+/* section pen side  */
 .pen-box{
     position: absolute;
     /* width: auto; */
     
     /* height: 600px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     top: 50%;
     right: -3%;
     transform: rotate(270deg);
@@ -214,4 +237,60 @@ img.active{
 }
 #name{
    color: #C7669C;
+}
+
+/* img  */
+.planete{
+position: absolute;
+width: 180px;
+height: 180px;
+left: -1%;
+bottom:26% ;
+
+}
+.etoile-droite{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 35%;
+    left: 23%;
+}
+.etoile-gauche{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 40%;
+    left: 325px;
+    
+}
+.avion{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 35%;
+    left: 15%;
+
+}
+.oeil{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 7%;
+    right: 3%;
+    transform: rotate(-20deg);
+}
+.ampoule{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 14%;
+    right: 6%;
+}
+.eclair{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 28%;
+    right: 22%;
+   
 }
