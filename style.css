@@ -54,19 +54,37 @@ header{
     width: 100%;
 
      padding-bottom: 30px;
-     border-radius: 0 0 100% 100%  ;
+     border-radius:  1% 1% 53% 53% / 90% 90% 10% 10%;
+     @media screen and (max-width: 1024px) {
+        height: 25dvh;
+        border-radius:  1% 1% 53% 53% / 90% 90% 10% 10%;
+          }
+    
     
 }
 .h1-header{
     text-align: center;
     margin-bottom: 5px;
     font-family:Muli-Bold ;
+    @media screen and (max-width: 1024px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 20px;
+        text-align: left;
+        padding-left: 30px;
+      
+          }
 
 }
 .corazon{
     margin-bottom: 4px;
     width: 50px;
     height:50px;
+    @media screen and (max-width: 1024px) {
+        width: 35px;
+        height:35px;
+    }
 }
 .h2-header{
     color: #EB9731;
@@ -78,15 +96,35 @@ header{
     font-size: 50px;
     text-align: center;
     line-height: 0;
+    @media screen and (max-width: 1024px) {
+        font-size: 40px;
+        margin-left: 230px;
+        /* line-height: -10px; */
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 30px;
+        margin-left: 90px;
+        text-align: left;
+        margin-bottom: 30px;
+      
+          }
 }
 .container-p-header{
     width: 45%;
     /* border: 1px solid red; */
     margin: 0 auto;
     text-align: center;
+    @media screen and (max-width: 1024px) {
+       
+        width: 90%;
+           }
 }
 .p-header{
     font-family:Muli-Light ;
+    @media screen and (max-width: 1024px) {
+       font-size: 14px;
+           }
+  
 }
 .strong{
    font-family: Muli-Bold;
@@ -99,6 +137,19 @@ header{
     left: 10%;
     width: 120px;
     height: 120px;
+    @media screen and (max-width: 1024px) {
+       top:70% ;
+        left: 30%;
+        width: 60px;
+        height: 60px;
+    }
+    @media screen and (max-width: 1024px) {
+       
+        top:80%;
+        left: 6%;
+        width: 60px;
+        height: 60px;
+          }
 }
 .crayon{
     position: absolute;
@@ -106,6 +157,17 @@ header{
     top: 0%;
     width: 120px;
     height: 120px;
+    @media screen and (max-width: 1024px) {
+        right: 27%;
+        width: 60px;
+        height: 60px;
+    }
+    @media screen and (max-width: 1024px) {
+       
+        right: 22%;
+        width: 50px;
+        height: 50px;
+          }
 }
 
 /* Main  */
@@ -132,6 +194,15 @@ position: relative;
 /* border: 1px solid red; */
 
 overflow: hidden;
+@media screen and (max-width: 1024px) {
+    background-color: #ecceaa;
+   width: 60%;
+   height: 280px;
+   overflow: inherit;
+   /* overflow-: hidden; */
+   border-radius:  1% 1% 53% 53% / 90% 90% 10% 10%;
+  
+      }
 }
 
 
@@ -140,11 +211,22 @@ overflow: hidden;
     /* width: 00px; */
     /* height: 50%; */
     display: none;
+    @media screen and (max-width: 1024px) {
+       /* background-color: #EB9731; */
+      width: 200px;
+     
+         }
 }
 
 img.active{
     display: inline-block;
     width: 50%;
+    @media screen and (max-width: 1024px) {
+        /* background-color: #e2c199; */
+       width: 120%;
+       
+      
+          }
 }
 
 .carrousel{
@@ -156,6 +238,19 @@ img.active{
 .h3-main{
     text-align: center;
     font-family:Muli-Bold ;
+    @media screen and (max-width: 1024px) {
+   width: 30%;
+   margin: 0 auto;
+   padding: 20px 0;
+
+    }
+    @media screen and (max-width: 1024px) {
+        width: 72%;
+        font-size: 16px;
+        line-height: 18px;
+        /* border: 1px solid red; */
+        
+          }
 }
 .intensity{
     color: #EB9731;
@@ -190,6 +285,10 @@ img.active{
  font-family:Muli-Bold ;
  background-color: #EB9731;
  border-radius: 50px;
+ @media screen and (max-width: 1024px) {
+    padding: 6px 100px;
+         
+           }
 }
 #right-arrow,#left-arrow{
     cursor: pointer;
@@ -198,13 +297,28 @@ img.active{
 #right-arrow{
     position: absolute;
     right: 35%;
+    @media screen and (max-width: 1024px) {
+        /* background-color: #EB9731; */
+        right: 15%;
+        z-index: 100;
+      
+          }
 }
 #left-arrow{
     position: absolute;
     left: 35%;
     z-index: 10;
+    @media screen and (max-width: 1024px) {
+        /* background-color: #EB9731; */
+        left: 15%;
+        z-index: 100;
+      
+          }
 }
 /* section pen side  */
+
+
+
 .pen-box{
     position: absolute;
     /* width: auto; */
@@ -219,6 +333,30 @@ img.active{
     align-items: flex-end;
     /* flex-direction: column; */
     gap: 40px;
+    @media screen and (max-width: 1024px) {
+   
+
+       
+        position: absolute;
+      
+        border-radius:  1% 1% 50% 50% / 90% 90% 10% 10% ;
+    
+        top: 64%;
+        right: 26%;
+        transform: rotate(0);
+        height: 80px;
+        /* max-height: 300px; */
+
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        gap: 30px;
+        /* overflow: hidden; */
+        /* max-height:50px; */
+        /* max-width: 50px; */
+        overflow: hidden;
+     
+          }
 }
 
 .pencil{
@@ -227,12 +365,26 @@ img.active{
     /* position: absolute; */
     /* right: 50%; */
     transition: all 0.5s ease;
+    @media screen and (max-width: 1024px) {
+       
+         /* height: 50px;  */
+        width: 15px;
+        /* object-fit: cover;  */
+        display: block;
+        height: auto;
+        /* position: absolute; */
+        bottom: 0;
+               }
 }
 
 .active-anim{
     transition: all 0.5s ease;
     height: 150px;
     opacity: 1;
+    @media screen and (max-width: 1024px) {
+       
+        height: 120px;
+               }
 
 }
 #name{
@@ -246,6 +398,14 @@ width: 180px;
 height: 180px;
 left: -1%;
 bottom:26% ;
+@media screen and (max-width: 1024px) {
+    position: absolute;
+width: 50px;
+height: 50px;
+left: -1%;
+bottom:6% ;
+    
+      }
 
 }
 .etoile-droite{
@@ -254,13 +414,27 @@ bottom:26% ;
     height: 40px;
     top: 35%;
     left: 23%;
+    @media screen and (max-width: 1024px) {
+        width: 20px;
+        height: 20px;
+        top: 45%;
+        left: 23%;
+        
+          }
 }
 .etoile-gauche{
     position: absolute;
     width: 25px;
     height: 25px;
     top: 40%;
-    left: 325px;
+    left: 24%;
+    @media screen and (max-width: 1024px) {
+        width: 10px;
+        height: 10px;
+        top: 44%;
+        left: 28%;
+        
+          }
     
 }
 .avion{
@@ -269,6 +443,13 @@ bottom:26% ;
     height: 120px;
     top: 35%;
     left: 15%;
+    @media screen and (max-width: 1024px) {
+       
+        width: 40px;
+        height: 40px;
+        top: 45%;
+        left: 10%;
+          }
 
 }
 .oeil{
@@ -278,6 +459,14 @@ bottom:26% ;
     bottom: 7%;
     right: 3%;
     transform: rotate(-20deg);
+    @media screen and (max-width: 1024px) {
+        width: 30px;
+        height: 30px;
+        bottom: 32%;
+        right: 12%;
+        transform: rotate(0deg);
+        
+          }
 }
 .ampoule{
     position: absolute;
@@ -285,6 +474,13 @@ bottom:26% ;
     height: 120px;
     bottom: 14%;
     right: 6%;
+    @media screen and (max-width: 1024px) {
+        width: 40px;
+    height: 40px;
+    bottom: 35%;
+    right: 14%;
+        
+          }
 }
 .eclair{
     position: absolute;
@@ -292,5 +488,19 @@ bottom:26% ;
     height: 80px;
     top: 28%;
     right: 22%;
+    @media screen and (max-width: 1024px) {
+        width: 40px;
+    height: 40px;
+    top: 20%;
+    right: 80%;
+    z-index: 10;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 40px;
+        height: 40px;
+        top: 26%;
+        right: 63%;
+        
+          }
    
 }
