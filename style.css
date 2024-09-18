@@ -178,6 +178,13 @@ header{
             width: 30px;
             height: 30px;
             }
+            @media screen and (max-width: 325px) {
+         
+                width: 20px;
+                height: 20px;
+                top: 28%;
+                left: 10%;
+            }
 }
 .crayon{
     position: absolute;
@@ -650,23 +657,31 @@ display: none;
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 3%;
+    top: 34%;
     right: 22%;
-    z-index: 100;
+    
     @media screen and (max-width: 1024px) {
+     
         width: 40px;
         height: 40px;
-        top: -4%;
-        right: 77%;
+        top: 23%;
+    right: 76%;
   
           }
 
           @media screen and (max-width: 425px) {
-            z-index: 100;
+         
             width: 20px;
             height: 20px;
-            top: -3%;
-            right: 75%;
+            top: 26%;
+            right: 76%;
+        }
+        @media screen and (max-width: 325px) {
+         
+            width: 20px;
+            height: 20px;
+            top: 28%;
+            right: 76%;
         }
    
    
