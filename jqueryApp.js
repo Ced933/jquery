@@ -5,7 +5,7 @@ $(document).ready(function () {
     // Aller à la prochaine image
     var prevImg = currentImg.prev();
 
-    // On va faire la meme chose que pour les image du carousel on selectionne celui qui a la classe active-anime
+    // On va faire la meme chose que pour les image du carrousel on selectionne celui qui a la classe active-anime
     var currentImgAnim = $(".active-anim");
     // L'ordre est inversé à cause de notre section à 270° on va donc devoir faire next() pour avoir l'image precédente et non pas prev()
     var prevImgAnim = currentImgAnim.next();

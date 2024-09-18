@@ -189,7 +189,7 @@ header{
       bottom: 0;
           }
 }
-.div-img-carousel-2{
+.div-img-carrousel-2{
     width: 50%;
     height: 50%;
     display: -webkit-box;
@@ -213,7 +213,7 @@ header{
       }
 
 }
-.div-img-carousel{
+.div-img-carrousel{
 
     width: 50%;
     height: 50%;
@@ -246,7 +246,7 @@ header{
 
 }
 
-.div-img-carousel-responsive{
+.div-img-carrousel-responsive{
     display: none;
     @media screen and (max-width: 1024px) {
         position: absolute;
