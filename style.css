@@ -36,15 +36,24 @@
 html{
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 body{
-    margin: 0 auto;
+   /* border: 1px solid red; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* width: 100%; */
+     /* background-color: #F4F1FB; */
+     background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(244,241,251,1) 46%);
 }
 
 /* Header  */
 header{
-    z-index: 10;
-    position: fixed;
+    /* z-index: 10; */
+    /* position: fixed; */
     background-color: white;
     width: 100%;
     padding-bottom: 30px;
@@ -138,6 +147,9 @@ header{
     @media screen and (max-width: 1024px) {
        font-size: 14px;
     }
+    @media screen and (max-width: 425px) {
+        font-size: 11px;
+     }
   
 }
 
@@ -148,17 +160,23 @@ header{
 
 .atome{
     position: absolute;
-    top: 50%;
+    top: 18%;
     left: 10%;
     width: 120px;
     height: 120px;
 
     @media screen and (max-width: 1024px) {
-        top:80%;
-        left: 6%;
+        top: 20%;
+        left: 10%;
         width: 60px;
         height: 60px;
         }
+        @media screen and (max-width: 425px) {
+            top: 24%;
+            left: 10%;
+            width: 30px;
+            height: 30px;
+            }
 }
 .crayon{
     position: absolute;
@@ -177,16 +195,17 @@ header{
 /* Main  */
 
 .main{
-    height: calc(100dvh - 28dvh);
-    padding-top: 240px;
+    /* height: calc(100dvh - 28dvh); */
+    /* padding-top: 240px; */
     width: 100%;
-    overflow: hidden;
-    background-color: #F4F1FB;
+    /* overflow: hidden; */
+    /* background-color: #F4F1FB; */
     position: relative;
+    padding-bottom: 40px;
     @media screen and (max-width: 1024px) {
       
-        padding-top: 200px;
-      bottom: 0;
+        /* padding-top: 200px;
+      bottom: 0; */
           }
 }
 .div-img-carrousel-2{
@@ -307,7 +326,7 @@ img.active{
     @media screen and (max-width: 1024px) {
    width: 30%;
    margin: 0 auto;
-   padding: 50px 0;
+   padding: 20px 0;
    line-height: 23px;
 
     }
@@ -413,7 +432,7 @@ img.active{
 
 .pen-box{
     position: absolute;
-    top: 50%;
+    top: 34%;
     right: -3%;
     -webkit-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
@@ -480,7 +499,7 @@ display: none;
        
    font-family: Lumios-Marker;
    font-weight: 100;
-   font-size: 30px;
+   font-size: 25px;
    margin: 0;
    margin-top: 15px;
    margin-bottom: 10px;
@@ -496,21 +515,20 @@ display: none;
     width: 180px;
     height: 180px;
     left: -1%;
-    bottom:26% ;
+    bottom:5% ;
     @media screen and (max-width: 1024px) {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        left: -1%;
-        bottom:6% ;
+        width: 80px;
+        height: 80px;
+        left: -2%;
+        bottom:-1% ;
     
       }
       @media screen and (max-width: 425px) {
        
         width: 50px;
         height: 50px;
-        left: -1%;
-        bottom:2% ;
+        left: -4%;
+        bottom:-3% ;
           }
 
 }
@@ -518,42 +536,42 @@ display: none;
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 35%;
-    left: 23%;
+    top: 20%;
+    left: 25%;
     @media screen and (max-width: 1024px) {
-        width: 20px;
-        height: 20px;
-        top: 45%;
-        left: 23%;
+        width: 28px;
+            height: 28px;
+            top: 27%;
+            left: 25%;
         
           }
           @media screen and (max-width: 425px) {
        
-            width: 15px;
-            height: 15px;
-            top: 52%;
-            left: 27%;
+            width: 14px;
+            height: 14px;
+            top: 27%;
+            left: 29%;
               }
 }
 .etoile-gauche{
     position: absolute;
     width: 25px;
     height: 25px;
-    top: 40%;
-    left: 24%;
+    top: 29%;
+    left: 26%;
     @media screen and (max-width: 1024px) {
-        width: 10px;
-        height: 10px;
-        top: 44%;
-        left: 28%;
+        width: 20px;
+            height: 20px;
+            top: 24%;
+            left: 30%;
         
           }
           @media screen and (max-width: 425px) {
        
             width: 10px;
             height: 10px;
-            top: 51%;
-            left: 31%;
+            top: 25%;
+            left: 34%;
               }
     
 }
@@ -561,21 +579,21 @@ display: none;
     position: absolute;
     width: 120px;
     height: 120px;
-    top: 35%;
-    left: 15%;
+    top: 22%;
+    left: 18%;
     @media screen and (max-width: 1024px) {
        
-        width: 40px;
-        height: 40px;
-        top: 45%;
-        left: 10%;
+        width: 80px;
+            height: 80px;
+            top: 25%;
+            left: 15%;
           }
           @media screen and (max-width: 425px) {
        
             width: 40px;
             height: 40px;
-            top: 51%;
-            left: 17%;
+            top: 25%;
+            left: 15%;
               }
 
 }
@@ -583,45 +601,49 @@ display: none;
     position: absolute;
     width: 70px;
     height: 70px;
-    bottom: 7%;
+    bottom: 2%;
     right: 3%;
     -webkit-transform: rotate(-20deg);
         -ms-transform: rotate(-20deg);
             transform: rotate(-20deg);
     @media screen and (max-width: 1024px) {
-        width: 30px;
+        /* width: 30px;
         height: 30px;
         bottom: 32%;
-        right: 12%;
+        right: 12%; */
+        width: 40px;
+        height: 40px;
+        bottom: 25%;
+        right: 17%;
         -webkit-transform: rotate(0deg);
             -ms-transform: rotate(0deg);
                 transform: rotate(0deg);
         
           }
           @media screen and (max-width: 425px) {
-            width: 30px;
-            height: 30px;
-            bottom: 25%;
-            right: 12%;
+            width: 27px;
+            height: 27px;
+            bottom: 33%;
+            right: 14%;
         }
 }
 .ampoule{
     position: absolute;
-    width: 120px;
-    height: 120px;
-    bottom: 14%;
-    right: 6%;
+    width: 100px;
+    height: 100px;
+    bottom: 8%;
+    right: 7%;
     @media screen and (max-width: 1024px) {
-        width: 40px;
-    height: 40px;
-    bottom: 35%;
-    right: 14%;
+        width: 60px;
+        height: 60px;
+        bottom: 34%;
+        right: 16%;
         
           }
           @media screen and (max-width: 425px) {
             width: 40px;
             height: 40px;
-            bottom: 29%;
+            bottom: 38%;
             right: 14%;
         }
           
@@ -630,28 +652,23 @@ display: none;
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 28%;
+    top: 3%;
     right: 22%;
-    z-index: 100;
+    /* z-index: 100; */
     @media screen and (max-width: 1024px) {
         width: 40px;
         height: 40px;
-        top: 22%;
-        right: 73%;
-        z-index: 100;
+        top: -4%;
+        right: 77%;
+  
           }
 
           @media screen and (max-width: 425px) {
-            width: 40px;
-            height: 40px;
-            top: 26%;
-            right: 61%;
+            width: 20px;
+            height: 20px;
+            top: -3%;
+            right: 75%;
         }
-    @media screen and (max-width: 425px) {
-        width: 40px;
-        height: 40px;
-        top: 25%;
-        right: 61%;
-    }
+   
    
 }
