@@ -332,13 +332,7 @@ img.active{
     line-height: 20px;
     
 }
-.div-description-carrousel h4{
-    font-family: Lumios-Marker;
-    font-weight: 100;
-    font-size: 35px;
-    margin: 0;
-    margin-bottom: 10px;
-}
+
 .div-description-carrousel p{
     font-family: Muli-Light;
     margin: 0;
@@ -416,6 +410,7 @@ img.active{
 
     }
 }
+
 .pen-box{
     position: absolute;
     top: 50%;
@@ -465,6 +460,11 @@ img.active{
 }
 #name{
    color: #C7669C;
+   font-family: Lumios-Marker;
+   font-weight: 100;
+   font-size: 35px;
+   margin: 0;
+   margin-bottom: 10px;
    @media screen and (max-width: 1024px) {
 display: none;    
     }
@@ -474,8 +474,16 @@ display: none;
 #name-responsive{
     display: none;
     @media screen and (max-width: 1024px) {
+        color: #C7669C;
         display: inline-block;
         text-align: center;
+       
+   font-family: Lumios-Marker;
+   font-weight: 100;
+   font-size: 30px;
+   margin: 0;
+   margin-top: 15px;
+   margin-bottom: 10px;
        
        }
 }
@@ -523,8 +531,8 @@ display: none;
        
             width: 15px;
             height: 15px;
-            top: 48%;
-            left: 23%;
+            top: 52%;
+            left: 27%;
               }
 }
 .etoile-gauche{
@@ -544,8 +552,8 @@ display: none;
        
             width: 10px;
             height: 10px;
-            top: 47%;
-            left: 27%;
+            top: 51%;
+            left: 31%;
               }
     
 }
@@ -566,8 +574,8 @@ display: none;
        
             width: 40px;
             height: 40px;
-            top: 48%;
-            left: 12%;
+            top: 51%;
+            left: 17%;
               }
 
 }
